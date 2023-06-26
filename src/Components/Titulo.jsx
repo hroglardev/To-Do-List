@@ -1,9 +1,9 @@
 const Titulo = () => {
-    return (
-        <div>
-            <h1>Esta es mi App de practica de react</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>This is a To-Do list</h1>
+    </div>
+  );
+};
 
-export default Titulo
+export default Titulo;
