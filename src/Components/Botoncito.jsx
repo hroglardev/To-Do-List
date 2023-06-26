@@ -1,6 +1,6 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from "react";
 
-const Botoncito = ({texto}) => {
+const Botoncito = ({ texto }) => {
   const [id, setId] = useState(window.localStorage.length);
   const [arr, setArr] = useState([]);
 
@@ -17,7 +17,7 @@ const Botoncito = ({texto}) => {
   return (
     <div>
       <button onClick={handleClick} texto={texto}>
-        Hola Ani
+        Add To Do
       </button>
       <ul>
         {arr.map((value) => {

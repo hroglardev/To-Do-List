@@ -1,8 +1,8 @@
-import {useState} from 'react';
-import Botoncito from './Botoncito';
+import { useState } from "react";
+import Botoncito from "./Botoncito";
 
 const Textarea = () => {
-  const [texto, setTexto] = useState('');
+  const [texto, setTexto] = useState("");
 
   const handleChange = (e) => {
     setTexto(e.target.value);
@@ -11,12 +11,13 @@ const Textarea = () => {
   return (
     <div>
       <textarea
-        name=''
-        id=''
-        cols='30'
-        rows='10'
+        name=""
+        id=""
+        cols="30"
+        rows="10"
         value={texto}
-        onChange={handleChange}></textarea>
+        onChange={handleChange}
+      ></textarea>
       <Botoncito texto={texto} />
     </div>
   );
