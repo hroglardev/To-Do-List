@@ -1,24 +1,25 @@
-import { useState } from "react"
-import Botonsito from "./Botonsito"
+import {useState} from 'react';
+import Botoncito from './Botoncito';
 
 const Textarea = () => {
-const [texto, setTexto] = useState("")
+  const [texto, setTexto] = useState('');
 
+  const handleChange = (e) => {
+    setTexto(e.target.value);
+  };
 
-const handleChange = (e) =>{
-    setTexto(
-        e.target.value
-    )
-}
+  return (
+    <div>
+      <textarea
+        name=''
+        id=''
+        cols='30'
+        rows='10'
+        value={texto}
+        onChange={handleChange}></textarea>
+      <Botoncito texto={texto} />
+    </div>
+  );
+};
 
-
-
-    return (
-        <div>
-            <textarea name="" id="" cols="30" rows="10" value ={texto} onChange = {handleChange} ></textarea>
-            <Botonsito texto = {texto}/>
-        </div>
-    )
-}
-
-export default Textarea
+export default Textarea;
